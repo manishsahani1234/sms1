@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Apex International School | CBSE Affiliated | Classes 8th to 12th</title>
+    <meta name="description" content="Official Institutional Website & Digital SMS Portal for Apex International School (Classes 8th to 12th). Online Admission 2026-27, Board Exam Prep, Student & Teacher Portals.">
+    <meta name="keywords" content="Apex International School, CBSE School Noida Delhi, Online Admission 2026, Class 10th 12th Board Prep, School Management System">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Apex International School - Official Institutional Portal">
+    <meta property="og:description" content="India's Premier CBSE Affiliated School for Classes 8th to 12th. Online Admission Open 2026-27.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Playfair Display / Serif for institutional feel + Inter/Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            800: '#800000',
+                            900: '#660000',
+                            950: '#4a0000'
+                        },
+                        navy: {
+                            800: '#002147',
+                            900: '#001733',
+                            950: '#000d1a'
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d4af37',
+                            600: '#b8961b',
+                            700: '#94760e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        royal: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- React 18 & Babel Standalone CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-crimson-800 selection:text-white min-h-screen">
+    <div id="root">
+        <!-- React App mounts here -->
+        <div class="min-h-screen flex items-center justify-center bg-slate-900 text-white p-4">
+            <div class="text-center p-8 bg-slate-800 rounded-3xl shadow-2xl border border-slate-700 max-w-sm w-full">
+                <div class="w-14 h-14 border-4 border-gold-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <h2 class="text-xl font-bold font-royal text-gold-400">APEX INTERNATIONAL SCHOOL</h2>
+                <p class="text-xs text-slate-400 mt-2">Loading Institutional Portal...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Institutional Data Store with Real High-Resolution Image URLs -->
+    <script>
+        window.SMS_DATA = {
+            schoolInfo: {
+                name: "Apex International School",
+                tagline: "Inspiring Excellence, Character & Innovation Since 2010",
+                subtitle: "Class 8th to 12th | CBSE Affiliated School Code: 89412",
+                affiliation: "CBSE Affiliated | Affiliation No: 2130984 | School Code: 89412",
+                phone: "+91 98765 43210 / Toll Free: 1800-120-8941",
+                email: "admissions@apexschool.edu.in",
+                address: "Institutional Area, Knowledge Park II, Greater Noida, NCR Delhi - 201310",
+                mapUrl: "https://maps.google.com/maps?q=Greater+Noida&t=&z=13&ie=UTF8&iwloc=&output=embed",
+                principalName: "Dr. Rajesh Sharma",
+                principalDegree: "Ph.D. in Physics (IIT Delhi), M.Ed (National Awardee)",
+                principalMessage: "Welcome to Apex International School. Our core academic philosophy blends rigorous CBSE curriculum mastery with state-of-the-art laboratory experimentation and board exam specialization. We are committed to developing global leaders through discipline, character, and scholastic excellence.",
+                principalImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80",
+                chairmanName: "Shri Ashok Malhotra",
+                chairmanTitle: "Founder & Managing Director",
+                chairmanMessage: "Education is the greatest catalyst for human empowerment. At Apex, we invest in world-class digital infrastructure, top-tier faculty, and complete transparency for parents.",
+                chairmanImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+                heroBannerImage: "https://images.unsplash.com/photo-1562774053-701939374585?w=1200&auto=format&fit=crop&q=80",
+                campusAboutImage: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=1000&auto=format&fit=crop&q=80"
+            },
+            toppers: [
+                { id: 1, name: "Siddharth Verma", class: "Class 12th (Science)", score: "98.6%", rank: "School Topper (CBSE 2025)", stream: "PCM + Computer", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80" },
+                { id: 2, name: "Riddhika Kapoor", class: "Class 12th (Commerce)", score: "97.8%", rank: "Commerce Stream Topper", stream: "Accounts & Econ", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=80" },
+                { id: 3, name: "Aarav Sharma", class: "Class 10th Board", score: "98.2%", rank: "Class 10th District Rank 2", stream: "Secondary Board", image: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=500&auto=format&fit=crop&q=80" }
+            ],
+            classes: [
+                { id: "8th", name: "Class 8th Foundation", section: "A, B, C", stream: "General Foundation & Olympiad Prep", totalStudents: 120, feePerTerm: 12000, image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80" },
+                { id: "9th", name: "Class 9th Secondary", section: "A, B, C", stream: "CBSE Prep & Foundation Skills", totalStudents: 115, feePerTerm: 14000, image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&fit=crop&q=80" },
+                { id: "10th", name: "Class 10th Board Special", section: "A, B, C", stream: "CBSE Board Intensive Coaching", totalStudents: 130, feePerTerm: 16000, image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&auto=format&fit=crop&q=80" },
+                { id: "11th-sci", name: "Class 11th (Science)", section: "A, B", stream: "Physics, Chem, Math / Bio + JEE/NEET Prep", totalStudents: 90, feePerTerm: 20000, image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&auto=format&fit=crop&q=80" },
+                { id: "11th-comm", name: "Class 11th (Commerce)", section: "A", stream: "Accountancy, Economics, Business Studies, Math", totalStudents: 60, feePerTerm: 18000, image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=80" },
+                { id: "11th-arts", name: "Class 11th (Humanities)", section: "A", stream: "History, Political Science, Psychology, English", totalStudents: 45, feePerTerm: 17000, image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&auto=format&fit=crop&q=80" },
+                { id: "12th-sci", name: "Class 12th (Science)", section: "A, B", stream: "Board Exam & Entrance Specialization", totalStudents: 95, feePerTerm: 22000, image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&auto=format&fit=crop&q=80" },
+                { id: "12th-comm", name: "Class 12th (Commerce)", section: "A", stream: "Board Exam & CA Foundation Specialization", totalStudents: 65, feePerTerm: 19500, image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=80" },
+                { id: "12th-arts", name: "Class 12th (Humanities)", section: "A", stream: "Board Exam Specialization", totalStudents: 50, feePerTerm: 18500, image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop&q=80" }
+            ],
+            faculty: [
+                { id: "T101", name: "Dr. Anita Verma", designation: "Head of Science Dept.", qualification: "Ph.D in Chemistry (DU)", experience: "15 Years", subject: "Chemistry (11th & 12th)", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80" },
+                { id: "T102", name: "Prof. Suresh Kumar", designation: "Senior Mathematics Faculty", qualification: "M.Sc Mathematics (IIT Delhi)", experience: "12 Years", subject: "Mathematics (10th & 12th)", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=80" },
+                { id: "T103", name: "Mrs. Sunita Rao", designation: "Senior Physics Faculty", qualification: "M.Sc Physics, B.Ed", experience: "10 Years", subject: "Physics (11th & 12th)", image: "https://images.unsplash.com/photo-1580894732413-80113885d564?w=500&auto=format&fit=crop&q=80" },
+                { id: "T104", name: "Mr. Vikram Singh", designation: "Commerce Dept. Lead", qualification: "M.Com, CA Inter", experience: "11 Years", subject: "Accountancy & Economics", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=80" },
+                { id: "T105", name: "Ms. Meenakshi Joshi", designation: "English & Humanities Dept.", qualification: "M.A. English Literature", experience: "8 Years", subject: "English & History (8th-10th)", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=80" }
+            ],
+            facilities: [
+                { title: "Digital Smart Classrooms", desc: "Interactive smart boards, high-speed Wi-Fi, and visual digital learning tools in every classroom from Class 8 to 12.", icon: "fa-laptop-code", image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80" },
+                { title: "Advanced Science & Bio Labs", desc: "State-of-the-art Physics, Chemistry, and Biology laboratories equipped for CBSE curriculum experiments.", icon: "fa-vials", image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80" },
+                { title: "Hi-Tech AI & Robotics Center", desc: "Modern computer laboratory with latest systems, programming environments, and high-speed fiber internet.", icon: "fa-desktop", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop&q=80" },
+                { title: "E-Resource Central Library", desc: "Over 15,000+ reference books, NCERT textbooks, board PYQs, journals, and digital e-book access.", icon: "fa-book-open", image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&auto=format&fit=crop&q=80" },
+                { title: "Sports Complex & Stadium", desc: "Basketball courts, Football field, Cricket nets, Badminton courts, and indoor games facilities.", icon: "fa-futbol", image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80" },
+                { title: "GPS AC Fleet Transport", desc: "Fleet of air-conditioned buses equipped with real-time GPS tracking and CCTV cameras for safety.", icon: "fa-bus", image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?w=800&auto=format&fit=crop&q=80" }
+            ],
+            students: [
+                { id: "STU-1001", rollNo: "1001", name: "Aarav Sharma", class: "10th", section: "A", parentName: "Ramesh Sharma", phone: "9812345670", email: "aarav@example.com", feeStatus: "Paid", attendance: 94, marks: { Math: 92, Science: 88, English: 95, SocialScience: 90, Hindi: 86 } },
+                { id: "STU-1002", rollNo: "1002", name: "Priya Patel", class: "10th", section: "A", parentName: "Sanjay Patel", phone: "9812345671", email: "priya@example.com", feeStatus: "Pending", pendingAmount: 4000, attendance: 91, marks: { Math: 85, Science: 94, English: 90, SocialScience: 89, Hindi: 92 } },
+                { id: "STU-1003", rollNo: "1003", name: "Rohan Gupta", class: "12th-sci", section: "A", parentName: "Vikas Gupta", phone: "9812345672", email: "rohan@example.com", feeStatus: "Paid", attendance: 96, marks: { Physics: 91, Chemistry: 89, Math: 95, English: 92, Computer: 98 } },
+                { id: "STU-1004", rollNo: "1004", name: "Ananya Iyer", class: "12th-comm", section: "A", parentName: "R. K. Iyer", phone: "9812345673", email: "ananya@example.com", feeStatus: "Pending", pendingAmount: 5500, attendance: 88, marks: { Accountancy: 94, Economics: 91, BusinessStudies: 89, Math: 86, English: 93 } }
+            ],
+            admissions: [
+                { id: "ADM-2026-01", applicantName: "Varun Malhotra", classApplied: "11th (Science)", parentName: "Deepak Malhotra", phone: "9876500001", email: "varun.parent@gmail.com", previousSchool: "St. Xavier Academy", percentage: "93.4%", status: "Pending", date: "2026-08-28" },
+                { id: "ADM-2026-02", applicantName: "Kavya Deshmukh", classApplied: "10th", parentName: "Nitin Deshmukh", phone: "9876500002", email: "kavya.parent@gmail.com", previousSchool: "Modern Public School", percentage: "89.0%", status: "Approved", date: "2026-08-25" }
+            ],
+            notices: [
+                { id: "N-1", title: "Class 10th & 12th Pre-Board Examination Schedule 2026-27", category: "Exam", date: "Sep 05, 2026", desc: "The official datesheet for Pre-Board Examinations (Term 1) for Classes 10th and 12th has been uploaded to the Academic portal. Exams begin from Oct 10, 2026.", urgent: true },
+                { id: "N-2", title: "Admissions Open for Class 8th to 12th Session 2026-27", category: "Admission", date: "Sep 04, 2026", desc: "Online admission applications are now open for the upcoming academic session. Apply online through the portal.", urgent: true },
+                { id: "N-3", title: "Science Exhibition & AI Innovation Fair 2026", category: "Events", date: "Sep 01, 2026", desc: "Students of Class 8th to 12th can submit project prototypes to their respective science teachers by Sep 20th.", urgent: false }
+            ],
+            gallery: [
+                { id: 1, title: "Annual Cultural Fest 2026", category: "Events", image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&auto=format&fit=crop&q=80" },
+                { id: 2, title: "Inter-School Science & AI Exhibition", category: "Academic", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=80" },
+                { id: 3, title: "Class 10th & 12th CBSE Merit Awards", category: "Academic", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop&q=80" },
+                { id: 4, title: "Basketball League Championship", category: "Sports", image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&auto=format&fit=crop&q=80" },
+                { id: 5, title: "Campus Plantation & Green Drive", category: "Social", image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop&q=80" },
+                { id: 6, title: "Annual Athletic Meet 2026", category: "Sports", image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80" }
+            ]
+        };
+    </script>
+
+    <!-- Institutional Galgotias-style Web App -->
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function SMSApp() {
+            const [data, setData] = useState(() => {
+                const saved = localStorage.getItem("APEX_INSTITUTIONAL_SMS_V4");
+                return saved ? JSON.parse(saved) : window.SMS_DATA;
+            });
+
+            const [activeRole, setActiveRole] = useState('website');
+            const [activeTab, setActiveTab] = useState('home');
+            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+            const [showEnquireDrawer, setShowEnquireDrawer] = useState(false);
+
+            useEffect(() => {
+                localStorage.setItem("APEX_INSTITUTIONAL_SMS_V4", JSON.stringify(data));
+            }, [data]);
+
+            const handleRoleChange = (role) => {
+                setActiveRole(role);
+                setMobileMenuOpen(false);
+                if (role === 'website') setActiveTab('home');
+                else if (role === 'admission') setActiveTab('admission-info');
+                else if (role === 'admin') setActiveTab('admin-dash');
+                else if (role === 'teacher') setActiveTab('teacher-dash');
+                else if (role === 'student') setActiveTab('student-dash');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            return (
+                <div class="min-h-screen flex flex-col bg-slate-100 text-slate-800 font-sans selection:bg-crimson-800 selection:text-white relative">
+                    
+                    {/* INSTITUTIONAL TOP UTILITY BAR (GALGOTIAS STYLE) */}
+                    <div class="bg-crimson-900 text-white text-[11px] font-medium py-1.5 px-4 flex flex-wrap items-center justify-between border-b border-crimson-800 z-50">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1.5 text-gold-400 font-bold"><i class="fa-solid fa-phone"></i> Helpline: +91 98765 43210</span>
+                            <span class="hidden md:flex items-center gap-1 text-slate-200"><i class="fa-solid fa-envelope"></i> admissions@apexschool.edu.in</span>
+                            <span class="hidden sm:inline bg-gold-500 text-crimson-950 font-bold px-2 py-0.5 rounded text-[10px]">CBSE Code: 89412</span>
+                        </div>
+
+                        {/* PORTAL ROLE SWITCHER TAB BAR */}
+                        <div class="flex items-center gap-1">
+                            <span class="text-slate-300 hidden lg:inline mr-2 font-semibold text-[10px] uppercase tracking-wider">Access Portals:</span>
+                            <button onClick={() => handleRoleChange('website')} class={`px-2.5 py-0.5 rounded font-bold transition text-[11px] ${activeRole === 'website' ? 'bg-gold-500 text-crimson-950 shadow' : 'bg-crimson-950 text-slate-200 hover:bg-crimson-800'}`}>
+                                Main Website
+                            </button>
+                            <button onClick={() => handleRoleChange('admission')} class={`px-2.5 py-0.5 rounded font-bold transition text-[11px] ${activeRole === 'admission' ? 'bg-gold-500 text-crimson-950 shadow' : 'bg-crimson-950 text-slate-200 hover:bg-crimson-800'}`}>
+                                Online Admission
+                            </button>
+                            <button onClick={() => handleRoleChange('admin')} class={`px-2.5 py-0.5 rounded font-bold transition text-[11px] ${activeRole === 'admin' ? 'bg-gold-500 text-crimson-950 shadow' : 'bg-crimson-950 text-slate-200 hover:bg-crimson-800'}`}>
+                                Admin Portal
+                            </button>
+                            <button onClick={() => handleRoleChange('teacher')} class={`px-2.5 py-0.5 rounded font-bold transition text-[11px] ${activeRole === 'teacher' ? 'bg-gold-500 text-crimson-950 shadow' : 'bg-crimson-950 text-slate-200 hover:bg-crimson-800'}`}>
+                                Faculty Login
+                            </button>
+                            <button onClick={() => handleRoleChange('student')} class={`px-2.5 py-0.5 rounded font-bold transition text-[11px] ${activeRole === 'student' ? 'bg-gold-500 text-crimson-950 shadow' : 'bg-crimson-950 text-slate-200 hover:bg-crimson-800'}`}>
+                                Student ERP
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* TICKER ANNOUNCEMENT MARQUEE */}
+                    <div class="bg-navy-900 text-white py-2 px-4 text-xs font-semibold flex items-center gap-3 border-b border-navy-800">
+                        <span class="bg-crimson-800 text-gold-400 font-extrabold px-2.5 py-0.5 rounded text-[10px] uppercase tracking-wider whitespace-nowrap flex items-center gap-1">
+                            <i class="fa-solid fa-bullhorn animate-pulse"></i> Announcements
+                        </span>
+                        <div class="overflow-hidden whitespace-nowrap text-slate-200 text-[11px] font-medium flex-1">
+                            <marquee scrollamount="6" behavior="scroll" direction="left">
+                                🌟 Admissions Open for Academic Session 2026-27 (Classes 8th to 12th Science, Commerce & Humanities) &nbsp; | &nbsp; 📢 Pre-Board Examination Schedule 2026 Released &nbsp; | &nbsp; 🏆 Congratulations to Siddharth Verma (98.6%) - CBSE Class 12th District Topper!
+                            </marquee>
+                        </div>
+                    </div>
+
+                    {/* MAIN INSTITUTIONAL HEADER */}
+                    <header class="bg-white border-b-2 border-gold-500 shadow-md sticky top-0 z-40">
+                        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+                            {/* School Crest Logo & Title */}
+                            <div class="flex items-center gap-3 cursor-pointer" onClick={() => handleRoleChange('website')}>
+                                <div class="w-12 h-12 rounded-full bg-crimson-900 border-2 border-gold-500 text-gold-400 flex items-center justify-center font-royal text-2xl font-black shadow-lg flex-shrink-0">
+                                    A
+                                </div>
+                                <div>
+                                    <h1 class="font-royal text-xl sm:text-2xl font-black text-crimson-900 tracking-tight leading-none uppercase">Apex International School</h1>
+                                    <p class="text-[11px] font-bold text-navy-800 mt-1 uppercase tracking-wider">CBSE Affiliated | Class 8th to 12th Senior Secondary</p>
+                                </div>
+                            </div>
+
+                            {/* Main Navigation Links */}
+                            <nav class="hidden xl:flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-navy-900">
+                                <button onClick={() => setActiveTab('home')} class={`px-3 py-2 transition ${activeTab === 'home' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Home</button>
+                                <button onClick={() => setActiveTab('about')} class={`px-3 py-2 transition ${activeTab === 'about' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>About Us</button>
+                                <button onClick={() => setActiveTab('academics')} class={`px-3 py-2 transition ${activeTab === 'academics' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Academics (8th-12th)</button>
+                                <button onClick={() => setActiveTab('faculty')} class={`px-3 py-2 transition ${activeTab === 'faculty' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Faculty</button>
+                                <button onClick={() => setActiveTab('facilities')} class={`px-3 py-2 transition ${activeTab === 'facilities' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Facilities</button>
+                                <button onClick={() => setActiveTab('toppers')} class={`px-3 py-2 transition ${activeTab === 'toppers' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Toppers</button>
+                                <button onClick={() => setActiveTab('notices')} class={`px-3 py-2 transition ${activeTab === 'notices' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Notices</button>
+                                <button onClick={() => setActiveTab('gallery')} class={`px-3 py-2 transition ${activeTab === 'gallery' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Gallery</button>
+                                <button onClick={() => setActiveTab('contact')} class={`px-3 py-2 transition ${activeTab === 'contact' ? 'text-crimson-800 border-b-2 border-crimson-800' : 'hover:text-crimson-800'}`}>Contact</button>
+                            </nav>
+
+                            {/* Header CTAs */}
+                            <div class="flex items-center gap-2">
+                                <button onClick={() => handleRoleChange('admission')} class="bg-crimson-900 hover:bg-crimson-800 text-gold-400 font-extrabold px-4 py-2 rounded shadow-md text-xs uppercase tracking-wider border border-gold-500 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-pen-nib"></i> Apply Now 2026-27
+                                </button>
+                                
+                                <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} class="xl:hidden text-navy-900 text-xl p-1.5">
+                                    <i class={`fa-solid ${mobileMenuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Mobile Navigation Drawer */}
+                        {mobileMenuOpen && (
+                            <div class="xl:hidden bg-white border-t border-slate-200 px-4 py-3 space-y-2 text-xs font-bold uppercase text-navy-900 shadow-2xl">
+                                <button onClick={() => { setActiveTab('home'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Home</button>
+                                <button onClick={() => { setActiveTab('about'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">About Us</button>
+                                <button onClick={() => { setActiveTab('academics'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Academics (8th to 12th)</button>
+                                <button onClick={() => { setActiveTab('faculty'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Faculty Directory</button>
+                                <button onClick={() => { setActiveTab('facilities'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Facilities</button>
+                                <button onClick={() => { setActiveTab('toppers'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">CBSE Toppers</button>
+                                <button onClick={() => { setActiveTab('notices'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Notice Board</button>
+                                <button onClick={() => { setActiveTab('gallery'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Gallery</button>
+                                <button onClick={() => { setActiveTab('contact'); setMobileMenuOpen(false); }} class="block w-full text-left py-2 border-b">Contact Us</button>
+                            </div>
+                        )}
+                    </header>
+
+                    {/* STICKY QUICK ENQUIRE SIDE TAB (GALGOTIAS FEATURE) */}
+                    <button 
+                        onClick={() => setShowEnquireDrawer(true)} 
+                        class="fixed right-0 top-1/2 -translate-y-1/2 bg-crimson-900 text-gold-400 font-extrabold py-3 px-2 text-xs tracking-widest uppercase shadow-2xl z-40 border-l-2 border-t-2 border-b-2 border-gold-500 rounded-l-lg transform hover:-translate-x-1 transition duration-200 [writing-mode:vertical-rl]"
+                    >
+                        <i class="fa-solid fa-paper-plane mb-2"></i> Quick Admission Enquiry
+                    </button>
+
+                    {/* ACTIVE ROLE VIEW */}
+                    <div class="flex-1 flex flex-col">
+                        {activeRole === 'website' && <PublicWebsite data={data} activeTab={activeTab} setActiveTab={setActiveTab} handleRoleChange={handleRoleChange} setShowEnquireDrawer={setShowEnquireDrawer} />}
+                        {activeRole === 'admission' && <AdmissionPortal data={data} setData={setData} />}
+                        {activeRole === 'admin' && <AdminPortal data={data} setData={setData} />}
+                        {activeRole === 'teacher' && <TeacherPortal data={data} setData={setData} />}
+                        {activeRole === 'student' && <StudentPortal data={data} setData={setData} />}
+                    </div>
+
+                    {/* INSTITUTIONAL FOOTER */}
+                    <footer class="bg-navy-950 text-slate-300 text-xs pt-12 pb-6 px-4 border-t-4 border-gold-500 mt-auto">
+                        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2 font-royal text-lg font-bold text-white">
+                                    <div class="w-8 h-8 rounded-full bg-crimson-900 border border-gold-500 text-gold-400 flex items-center justify-center text-sm">A</div>
+                                    <span>{data.schoolInfo.name}</span>
+                                </div>
+                                <p class="text-slate-400 text-xs leading-relaxed">{data.schoolInfo.affiliation}</p>
+                                <p class="text-gold-400 font-semibold text-xs">Recognized Center of Scholastic & Board Excellence.</p>
+                            </div>
+
+                            <div>
+                                <h4 class="font-royal text-sm font-bold text-white uppercase tracking-wider mb-3 border-b border-navy-800 pb-1">Academic Programs</h4>
+                                <ul class="space-y-1.5 text-slate-400">
+                                    <li>Class 8th & 9th Foundation</li>
+                                    <li>Class 10th CBSE Board Preparation</li>
+                                    <li>Class 11th & 12th Science Stream (PCM/PCB)</li>
+                                    <li>Class 11th & 12th Commerce Stream</li>
+                                    <li>Class 11th & 12th Humanities / Arts</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-royal text-sm font-bold text-white uppercase tracking-wider mb-3 border-b border-navy-800 pb-1">Digital Portals</h4>
+                                <ul class="space-y-1.5 text-slate-400">
+                                    <li><button onClick={() => handleRoleChange('admission')} class="hover:text-gold-400">Online Admission Application</button></li>
+                                    <li><button onClick={() => handleRoleChange('student')} class="hover:text-gold-400">Student ERP & Board Quiz</button></li>
+                                    <li><button onClick={() => handleRoleChange('teacher')} class="hover:text-gold-400">Teacher Portal & Marks Entry</button></li>
+                                    <li><button onClick={() => handleRoleChange('admin')} class="hover:text-gold-400">School Administration Panel</button></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-royal text-sm font-bold text-white uppercase tracking-wider mb-3 border-b border-navy-800 pb-1">Campus Contact</h4>
+                                <p class="mb-1 text-slate-400"><i class="fa-solid fa-location-dot text-gold-400 mr-2"></i>{data.schoolInfo.address}</p>
+                                <p class="mb-1 text-slate-400"><i class="fa-solid fa-phone text-gold-400 mr-2"></i>{data.schoolInfo.phone}</p>
+                                <p class="text-slate-400"><i class="fa-solid fa-envelope text-gold-400 mr-2"></i>{data.schoolInfo.email}</p>
+                            </div>
+                        </div>
+
+                        <div class="max-w-7xl mx-auto pt-4 border-t border-navy-900 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-2">
+                            <p>© 2026 Apex International School. All Rights Reserved.</p>
+                            <p class="text-gold-400 font-semibold">Institutional Grade Web Application | Ready for GitHub Pages</p>
+                        </div>
+                    </footer>
+
+                    {/* ENQUIRE NOW DRAWER MODAL */}
+                    {showEnquireDrawer && (
+                        <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex items-center justify-end">
+                            <div class="bg-white h-full max-w-md w-full p-6 shadow-2xl space-y-4 overflow-y-auto border-l-4 border-crimson-900">
+                                <div class="flex items-center justify-between border-b pb-3">
+                                    <h3 class="font-royal font-extrabold text-lg text-crimson-900 uppercase">Admission Enquiry 2026-27</h3>
+                                    <button onClick={() => setShowEnquireDrawer(false)} class="text-slate-500 hover:text-slate-900 text-xl">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <form onSubmit={e => { e.preventDefault(); alert("Enquiry submitted successfully! Our counseling team will contact you."); setShowEnquireDrawer(false); }} class="space-y-3 text-xs">
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1">Parent / Guardian Name *</label>
+                                        <input required type="text" placeholder="Full Name" class="w-full p-2.5 border rounded-lg" />
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1">Mobile Number *</label>
+                                        <input required type="tel" placeholder="10-digit mobile number" class="w-full p-2.5 border rounded-lg" />
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1">Seeking Admission for Class *</label>
+                                        <select class="w-full p-2.5 border rounded-lg font-medium">
+                                            <option>Class 8th</option>
+                                            <option>Class 9th</option>
+                                            <option>Class 10th Board</option>
+                                            <option>Class 11th (Science PCM/PCB)</option>
+                                            <option>Class 11th (Commerce)</option>
+                                            <option>Class 11th (Humanities)</option>
+                                            <option>Class 12th (Science PCM/PCB)</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1">Message / Question</label>
+                                        <textarea rows="3" placeholder="Ask about fee structure, curriculum, transport..." class="w-full p-2.5 border rounded-lg"></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-crimson-900 text-gold-400 font-extrabold py-3 rounded-lg uppercase tracking-wider text-xs shadow-md">
+                                        Submit Admission Enquiry
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        /* PUBLIC WEBSITE COMPONENT */
+        function PublicWebsite({ data, activeTab, setActiveTab, handleRoleChange, setShowEnquireDrawer }) {
+            return (
+                <div class="flex-1 flex flex-col">
+                    {activeTab === 'home' && <HomeTab data={data} setActiveTab={setActiveTab} handleRoleChange={handleRoleChange} setShowEnquireDrawer={setShowEnquireDrawer} />}
+                    {activeTab === 'about' && <AboutTab data={data} />}
+                    {activeTab === 'academics' && <AcademicsTab data={data} handleRoleChange={handleRoleChange} />}
+                    {activeTab === 'faculty' && <FacultyTab data={data} />}
+                    {activeTab === 'facilities' && <FacilitiesTab data={data} />}
+                    {activeTab === 'toppers' && <ToppersTab data={data} />}
+                    {activeTab === 'notices' && <NoticesTab data={data} />}
+                    {activeTab === 'gallery' && <GalleryTab data={data} />}
+                    {activeTab === 'contact' && <ContactTab data={data} />}
+                </div>
+            );
+        }
+
+        /* HOME TAB - INSTITUTIONAL HERO & SECTIONS */
+        function HomeTab({ data, setActiveTab, handleRoleChange, setShowEnquireDrawer }) {
+            return (
+                <div class="space-y-12 pb-12">
+                    
+                    {/* GALGOTIAS-STYLE GRAND HERO SECTION WITH REAL CAMPUS IMAGE */}
+                    <section class="bg-gradient-to-r from-navy-950 via-navy-900 to-crimson-950 text-white py-16 sm:py-24 px-4 relative overflow-hidden border-b-4 border-gold-500">
+                        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                            
+                            {/* Left Text */}
+                            <div class="lg:col-span-7 space-y-6">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-500/20 border border-gold-500/40 text-gold-400 text-xs font-extrabold uppercase tracking-wider">
+                                    <i class="fa-solid fa-graduation-cap"></i> Admission Open for Session 2026-27 (Classes 8th to 12th)
+                                </div>
+                                
+                                <h1 class="font-royal text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
+                                    TRANSFORMING MINDS. <br/>
+                                    <span class="text-gold-400 italic font-serif">SHAPING FUTURE LEADERS.</span>
+                                </h1>
+                                
+                                <p class="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed">
+                                    India's Premier Senior Secondary Institution for Classes 8th to 12th. Combining CBSE Academic Rigor, Advanced AI/Science Labs, and 100% Board Exam Success.
+                                </p>
+
+                                <div class="flex flex-wrap gap-3 pt-2">
+                                    <button onClick={() => handleRoleChange('admission')} class="bg-crimson-900 hover:bg-crimson-800 text-gold-400 font-extrabold px-6 py-3 rounded text-xs sm:text-sm uppercase tracking-wider border-2 border-gold-500 shadow-xl flex items-center gap-2">
+                                        <i class="fa-solid fa-file-pen"></i> Apply Online Admission 2026
+                                    </button>
+                                    <button onClick={() => setShowEnquireDrawer(true)} class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-extrabold px-6 py-3 rounded text-xs sm:text-sm uppercase tracking-wider shadow-xl flex items-center gap-2">
+                                        <i class="fa-solid fa-phone"></i> Enquire Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Right Real Campus Image Card */}
+                            <div class="lg:col-span-5">
+                                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-500">
+                                    <img src={data.schoolInfo.heroBannerImage} alt="Campus Building" class="w-full h-72 sm:h-96 object-cover" />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent flex items-end p-6">
+                                        <div class="text-white space-y-1">
+                                            <span class="bg-gold-500 text-navy-950 font-bold text-[10px] px-2 py-0.5 rounded uppercase">Ranked #1 In Academic Excellence</span>
+                                            <h3 class="font-royal text-lg font-bold text-white">100% CBSE Class 10th & 12th Board Results</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* KEY HIGHLIGHTS STATS BAR */}
+                    <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
+                        <div class="bg-white rounded-xl shadow-xl border-2 border-gold-500 p-6 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                            <div class="space-y-1">
+                                <div class="font-royal font-extrabold text-3xl text-crimson-900">100%</div>
+                                <div class="text-xs font-bold text-navy-900 uppercase">CBSE Board Pass Rate</div>
+                            </div>
+                            <div class="space-y-1 border-l">
+                                <div class="font-royal font-extrabold text-3xl text-crimson-900">98.6%</div>
+                                <div class="text-xs font-bold text-navy-900 uppercase">Highest Class 12th Score</div>
+                            </div>
+                            <div class="space-y-1 border-l">
+                                <div class="font-royal font-extrabold text-3xl text-crimson-900">15+</div>
+                                <div class="text-xs font-bold text-navy-900 uppercase">Years Educational Legacy</div>
+                            </div>
+                            <div class="space-y-1 border-l">
+                                <div class="font-royal font-extrabold text-3xl text-crimson-900">100%</div>
+                                <div class="text-xs font-bold text-navy-900 uppercase">Digital Smart Campus</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* TOPPERS SHOWCASE SECTION WITH REAL TOPPER PORTRAITS */}
+                    <section class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+                        <div class="text-center space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson-900 bg-crimson-50 px-3 py-1 rounded border border-crimson-200">Hall of Merit</span>
+                            <h2 class="font-royal text-2xl sm:text-3xl font-extrabold text-navy-900">CBSE Board Exam Toppers 2025-26</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            {data.toppers.map(top => (
+                                <div key={top.id} class="bg-white rounded-xl shadow-lg border-2 border-slate-200 overflow-hidden hover:border-gold-500 transition group">
+                                    <div class="h-60 overflow-hidden relative">
+                                        <img src={top.image} alt={top.name} class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+                                        <span class="absolute top-3 right-3 bg-gold-500 text-navy-950 font-extrabold text-xs px-2.5 py-1 rounded shadow">
+                                            {top.score}
+                                        </span>
+                                    </div>
+                                    <div class="p-4 text-center space-y-1">
+                                        <h3 class="font-royal font-extrabold text-slate-900 text-base">{top.name}</h3>
+                                        <p class="text-xs font-bold text-crimson-900">{top.rank}</p>
+                                        <p class="text-[11px] text-slate-500">{top.class} | {top.stream}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* LEADERSHIP SPEAKS WITH REAL PORTRAITS */}
+                    <section class="bg-slate-900 text-white py-12 px-4 border-t-2 border-b-2 border-gold-500">
+                        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="space-y-4">
+                                <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Principal's Message</span>
+                                <h3 class="font-royal text-2xl font-bold text-white">{data.schoolInfo.principalName}</h3>
+                                <p class="text-xs text-gold-400 font-semibold">{data.schoolInfo.principalDegree}</p>
+                                <blockquote class="text-xs sm:text-sm text-slate-300 italic leading-relaxed border-l-2 border-gold-500 pl-4 py-1">
+                                    "{data.schoolInfo.principalMessage}"
+                                </blockquote>
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden border-2 border-gold-500 shadow-2xl">
+                                <img src={data.schoolInfo.principalImage} alt="Principal" class="w-full h-72 object-cover" />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* FACILITIES GALLERY WITH REAL PHOTOS */}
+                    <section class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+                        <div class="text-center space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-widest text-crimson-900 bg-crimson-50 px-3 py-1 rounded border border-crimson-200">World-Class Infrastructure</span>
+                            <h2 class="font-royal text-2xl sm:text-3xl font-extrabold text-navy-900">Campus Facilities</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            {data.facilities.slice(0, 3).map((fac, idx) => (
+                                <div key={idx} class="bg-white rounded-xl overflow-hidden shadow border border-slate-200 hover:border-gold-500 transition">
+                                    <img src={fac.image} alt={fac.title} class="w-full h-44 object-cover" />
+                                    <div class="p-4 space-y-1">
+                                        <h3 class="font-royal font-bold text-sm text-navy-900">{fac.title}</h3>
+                                        <p class="text-xs text-slate-600 line-clamp-2">{fac.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                </div>
+            );
+        }
+
+        function AboutTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-8">
+                    <div class="text-center space-y-2">
+                        <h2 class="font-royal text-3xl font-extrabold text-navy-900">About {data.schoolInfo.name}</h2>
+                        <p class="text-xs font-bold text-crimson-900 uppercase tracking-wider">CBSE Affiliated Senior Secondary Institution</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <img src={data.schoolInfo.campusAboutImage} alt="Campus" class="rounded-xl border-2 border-gold-500 shadow-xl w-full h-80 object-cover" />
+                        <div class="bg-white p-6 rounded-xl shadow border border-slate-200 text-xs sm:text-sm leading-relaxed space-y-4 text-slate-700">
+                            <p>Apex International School is a flagship senior secondary institution empowering scholars from Class 8th to 12th. Guided by academic rigor, discipline, and technological innovation, our campus provides holistic development for competitive entrance and board examinations.</p>
+                            <p>Our infrastructure includes hi-tech science laboratories, smart digital classrooms, robotics centers, e-resource library, and Olympian-standard athletic facilities.</p>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function AcademicsTab({ data, handleRoleChange }) {
+            return (
+                <div class="py-12 px-4 max-w-7xl mx-auto space-y-8">
+                    <div class="text-center space-y-2">
+                        <h2 class="font-royal text-3xl font-extrabold text-navy-900">Academic Programs (Classes 8th to 12th)</h2>
+                        <p class="text-xs font-bold text-crimson-900 uppercase">CBSE Curriculum & Board Specialization</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {data.classes.map(c => (
+                            <div key={c.id} class="bg-white rounded-xl overflow-hidden shadow border-2 border-slate-200 hover:border-gold-500 transition space-y-3">
+                                <img src={c.image} alt={c.name} class="w-full h-40 object-cover" />
+                                <div class="p-4 space-y-2">
+                                    <span class="bg-crimson-900 text-gold-400 font-bold text-[10px] px-2 py-0.5 rounded uppercase">{c.name}</span>
+                                    <h3 class="font-royal font-bold text-base text-navy-900">{c.stream}</h3>
+                                    <p class="text-xs text-slate-600">Sections: {c.section} | Tuition Fee: ₹{c.feePerTerm.toLocaleString('en-IN')}</p>
+                                    <button onClick={() => handleRoleChange('admission')} class="w-full bg-navy-900 text-gold-400 font-bold py-2 rounded text-xs uppercase tracking-wider mt-2">
+                                        Apply For Admission
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function FacultyTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-6">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">Senior Academic Faculty</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {data.faculty.map(f => (
+                            <div key={f.id} class="bg-white p-5 rounded-xl border shadow text-center space-y-2 group">
+                                <img src={f.image} alt={f.name} class="w-28 h-28 rounded-full mx-auto object-cover border-2 border-gold-500 shadow group-hover:scale-105 transition" />
+                                <h3 class="font-royal font-bold text-slate-900 text-base">{f.name}</h3>
+                                <p class="text-xs text-crimson-900 font-semibold">{f.designation}</p>
+                                <p class="text-[11px] text-slate-500">{f.subject}</p>
+                                <p class="text-[10px] text-slate-400">{f.qualification} | Exp: {f.experience}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function FacilitiesTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-6">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">World-Class Campus Infrastructure</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {data.facilities.map((fac, idx) => (
+                            <div key={idx} class="bg-white rounded-xl overflow-hidden border shadow space-y-2 text-xs">
+                                <img src={fac.image} alt={fac.title} class="w-full h-44 object-cover" />
+                                <div class="p-4 space-y-1">
+                                    <h3 class="font-royal font-bold text-sm text-slate-900">{fac.title}</h3>
+                                    <p class="text-slate-600">{fac.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function ToppersTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-6">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">CBSE Board Exam Toppers & Merit List</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {data.toppers.map(t => (
+                            <div key={t.id} class="bg-white rounded-xl shadow border-2 border-gold-500 overflow-hidden text-center p-6 space-y-3">
+                                <img src={t.image} alt={t.name} class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-crimson-900 shadow" />
+                                <h3 class="font-royal font-bold text-lg text-slate-900">{t.name}</h3>
+                                <p class="text-xs font-bold text-crimson-900">{t.rank}</p>
+                                <span class="bg-gold-500 text-navy-950 font-extrabold text-sm px-3 py-1 rounded inline-block">{t.score}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function NoticesTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-4xl mx-auto space-y-4">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">Official Notices & Circulars</h2>
+                    {data.notices.map(n => (
+                        <div key={n.id} class="bg-white p-5 rounded-xl border shadow space-y-1 text-xs">
+                            <div class="flex justify-between font-bold text-crimson-900">
+                                <span>{n.category}</span>
+                                <span class="text-slate-400">{n.date}</span>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-sm">{n.title}</h3>
+                            <p class="text-slate-600">{n.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            );
+        }
+
+        function GalleryTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-6">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">Campus Life & Event Gallery</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {data.gallery.map(g => (
+                            <div key={g.id} class="bg-white rounded-xl overflow-hidden border shadow hover:shadow-lg transition">
+                                <img src={g.image} alt={g.title} class="w-full h-48 object-cover" />
+                                <div class="p-3 text-xs font-bold text-slate-900">{g.title}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        function ContactTab({ data }) {
+            return (
+                <div class="py-12 px-4 max-w-6xl mx-auto space-y-6">
+                    <h2 class="font-royal text-3xl font-extrabold text-navy-900 text-center">Contact School Office</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl border text-xs space-y-3">
+                            <h3 class="font-bold text-sm text-navy-900">Get In Touch</h3>
+                            <form onSubmit={e => { e.preventDefault(); alert("Enquiry Sent!"); }} class="space-y-3">
+                                <input placeholder="Full Name" class="w-full p-2.5 border rounded" />
+                                <input placeholder="Phone Number" class="w-full p-2.5 border rounded" />
+                                <textarea placeholder="Message" rows="3" class="w-full p-2.5 border rounded"></textarea>
+                                <button class="w-full bg-crimson-900 text-gold-400 font-extrabold py-2.5 rounded">Submit Message</button>
+                            </form>
+                        </div>
+                        <div class="bg-navy-950 text-white p-6 rounded-xl space-y-3 text-xs border-t-4 border-gold-500">
+                            <h3 class="font-royal font-bold text-sm text-gold-400">Campus Location</h3>
+                            <p><i class="fa-solid fa-location-dot text-gold-400 mr-2"></i>{data.schoolInfo.address}</p>
+                            <p><i class="fa-solid fa-phone text-gold-400 mr-2"></i>{data.schoolInfo.phone}</p>
+                            <p><i class="fa-solid fa-envelope text-gold-400 mr-2"></i>{data.schoolInfo.email}</p>
+                            <div class="h-40 rounded overflow-hidden mt-2">
+                                <iframe src={data.schoolInfo.mapUrl} class="w-full h-full border-0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        /* ONLINE ADMISSION PORTAL */
+        function AdmissionPortal({ data, setData }) {
+            const [submitted, setSubmitted] = useState(false);
+            const [name, setName] = useState('');
+            const [cls, setCls] = useState('10th');
+            const [parent, setParent] = useState('');
+            const [phone, setPhone] = useState('');
+
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                const newAdm = {
+                    id: `ADM-2026-0${data.admissions.length + 1}`,
+                    applicantName: name,
+                    classApplied: cls,
+                    parentName: parent,
+                    phone: phone,
+                    status: 'Pending',
+                    date: new Date().toISOString().split('T')[0]
+                };
+                setData(prev => ({ ...prev, admissions: [newAdm, ...prev.admissions] }));
+                setSubmitted(true);
+            };
+
+            return (
+                <div class="py-10 px-4 max-w-2xl mx-auto space-y-6 flex-1">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-crimson-900 space-y-4 text-xs">
+                        <h2 class="font-royal text-xl font-bold text-navy-900">Online Admission Application (Classes 8th to 12th)</h2>
+                        {submitted ? (
+                            <div class="text-center py-6 space-y-2">
+                                <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>
+                                <h3 class="font-bold text-base text-slate-900">Application Submitted Successfully!</h3>
+                                <p class="text-slate-500">Our admission desk will verify your details and contact you.</p>
+                                <button onClick={() => setSubmitted(false)} class="bg-crimson-900 text-gold-400 px-4 py-2 rounded font-bold">Submit Another</button>
+                            </div>
+                        ) : (
+                            <form onSubmit={handleSubmit} class="space-y-3">
+                                <div>
+                                    <label class="block font-semibold mb-1">Student Full Name *</label>
+                                    <input required value={name} onChange={e => setName(e.target.value)} placeholder="e.g. Varun Malhotra" class="w-full p-2.5 border rounded" />
+                                </div>
+                                <div>
+                                    <label class="block font-semibold mb-1">Class Applied *</label>
+                                    <select value={cls} onChange={e => setCls(e.target.value)} class="w-full p-2.5 border rounded">
+                                        <option value="8th">Class 8th</option>
+                                        <option value="9th">Class 9th</option>
+                                        <option value="10th">Class 10th Board</option>
+                                        <option value="11th (Science)">Class 11th (Science)</option>
+                                        <option value="12th (Science)">Class 12th (Science)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block font-semibold mb-1">Parent / Guardian Name *</label>
+                                    <input required value={parent} onChange={e => setParent(e.target.value)} placeholder="e.g. Deepak Malhotra" class="w-full p-2.5 border rounded" />
+                                </div>
+                                <div>
+                                    <label class="block font-semibold mb-1">Mobile Number *</label>
+                                    <input required value={phone} onChange={e => setPhone(e.target.value)} placeholder="e.g. 9876543210" class="w-full p-2.5 border rounded" />
+                                </div>
+                                <button type="submit" class="w-full bg-crimson-900 text-gold-400 font-extrabold py-3 rounded shadow uppercase">Submit Online Application</button>
+                            </form>
+                        )}
+                    </div>
+                </div>
+            );
+        }
+
+        /* ADMIN PORTAL */
+        function AdminPortal({ data }) {
+            return (
+                <div class="py-8 px-4 max-w-6xl mx-auto space-y-6 flex-1 text-xs">
+                    <div class="bg-navy-950 text-white p-6 rounded-xl border-t-4 border-gold-500 shadow flex justify-between items-center">
+                        <div>
+                            <h2 class="font-royal text-xl font-bold">School Administration Portal</h2>
+                            <p class="text-slate-400">Total Enrolled: {data.students.length} | Applications: {data.admissions.length}</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border space-y-4 shadow">
+                        <h3 class="font-bold text-sm text-slate-900">Student Roster</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border">
+                                <thead class="bg-slate-100 font-bold">
+                                    <tr>
+                                        <th class="p-2 border">Roll</th>
+                                        <th class="p-2 border">Name</th>
+                                        <th class="p-2 border">Class</th>
+                                        <th class="p-2 border">Fee Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {data.students.map(s => (
+                                        <tr key={s.id} class="hover:bg-slate-50">
+                                            <td class="p-2 border">{s.rollNo}</td>
+                                            <td class="p-2 border font-bold">{s.name}</td>
+                                            <td class="p-2 border">{s.class}</td>
+                                            <td class="p-2 border font-bold text-emerald-600">{s.feeStatus}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        /* TEACHER PORTAL */
+        function TeacherPortal({ data }) {
+            return (
+                <div class="py-8 px-4 max-w-5xl mx-auto space-y-6 flex-1 text-xs">
+                    <div class="bg-crimson-900 text-gold-400 p-6 rounded-xl shadow border-b-2 border-gold-500">
+                        <h2 class="font-royal text-xl font-bold">Faculty Portal</h2>
+                        <p class="text-slate-200">Attendance & Marks Entry System</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border space-y-3 shadow">
+                        <h3 class="font-bold text-sm text-slate-900">Class 10th Student Marks & Attendance</h3>
+                        {data.students.slice(0, 3).map(s => (
+                            <div key={s.id} class="p-3 border rounded flex justify-between items-center">
+                                <div><span class="font-bold">{s.name}</span> (Roll: {s.rollNo})</div>
+                                <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded font-bold">Attendance: {s.attendance}%</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        /* STUDENT PORTAL */
+        function StudentPortal({ data }) {
+            const student = data.students[2];
+            return (
+                <div class="py-8 px-4 max-w-5xl mx-auto space-y-6 flex-1 text-xs">
+                    <div class="bg-navy-900 text-white p-6 rounded-xl border-t-4 border-gold-500 shadow flex justify-between items-center">
+                        <div>
+                            <h2 class="font-royal text-xl font-bold">Welcome, {student.name}</h2>
+                            <p class="text-slate-300">{student.class} Section {student.section} (Science)</p>
+                        </div>
+                        <span class="bg-gold-500 text-navy-950 px-3 py-1 rounded font-bold">Attendance: {student.attendance}%</span>
+                    </div>
+
+                    <div id="printable-area" class="bg-white p-6 rounded-xl border space-y-4 shadow">
+                        <h3 class="font-royal font-bold text-sm text-slate-900">Class 12th Board Term Progress Report Card</h3>
+                        <table class="w-full text-left border">
+                            <thead class="bg-slate-100 font-bold">
+                                <tr>
+                                    <th class="p-2 border">Subject</th>
+                                    <th class="p-2 border">Marks Obtained</th>
+                                    <th class="p-2 border">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {Object.entries(student.marks).map(([sub, score]) => (
+                                    <tr key={sub}>
+                                        <td class="p-2 border font-bold">{sub}</td>
+                                        <td class="p-2 border">{score} / 100</td>
+                                        <td class="p-2 border font-bold text-emerald-600">A1</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                        <div class="flex justify-end no-print">
+                            <button onClick={() => window.print()} class="bg-crimson-900 text-gold-400 px-4 py-2 rounded font-bold">
+                                <i class="fa-solid fa-print mr-1"></i> Print Report Card PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<SMSApp />);
+    </script>
+</body>
+</html>

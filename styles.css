@@ -1,0 +1,61 @@
+/* Galgotias-style Institutional Custom Styles */
+
+@layer utilities {
+    .font-royal {
+        font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Institutional Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000d1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #800000;
+    border-radius: 4px;
+    border: 1px solid #d4af37;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #660000;
+}
+
+/* Marquee Animation Support */
+marquee {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* Print Styles for Fee Receipts and Report Cards */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printable-area, #printable-area * {
+        visibility: visible;
+    }
+    #printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    .no-print {
+        display: none !important;
+    }
+}
